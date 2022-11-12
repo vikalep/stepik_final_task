@@ -87,7 +87,7 @@ def test_guest_can_go_to_login_page_from_product_page(browser):
     page.go_to_login_page()
 
 @pytest.mark.need_review
-def test_guest_can_add_product_to_basket(self, browser):
+def test_guest_can_add_product_to_basket(browser):
         link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
         page = ProductPage(browser, link)
         page.open()
